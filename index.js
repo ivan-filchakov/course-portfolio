@@ -58,8 +58,6 @@ function showSlide(allSlides, i) {
 }
 
 function initSlider(slider) {
-// function initSlider(id) {
-  // const slider = document.querySelector(`#${id}`);
   const allSlides = slider.querySelectorAll('.slide');
   const sliderControls = slider.querySelector('.slider__controls');
 
@@ -76,8 +74,6 @@ function initSlider(slider) {
   showSlide(allSlides, 0)
   sliderControls.firstChild.className = 'sliderDot sliderDot--active';
 }
-
-// initSlider('welcomeSlider');
 
 const allSliders = document.querySelectorAll(`.slider`);
 allSliders.forEach(element => initSlider(element))
