@@ -71,8 +71,8 @@ function initSlider(slider) {
     sliderControls.append(newDot)
   }
 
-  showSlide(allSlides, 0)
-  sliderControls.firstChild.className = 'sliderDot sliderDot--active';
+  showSlide(allSlides, 0);
+  highlightDot(slider, 0)
 }
 
 const allSliders = document.querySelectorAll(`.slider`);
